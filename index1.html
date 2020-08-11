@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Book Tickets</title>
+    <link rel="icon"  type="image/png" sizes="16×16" href="images/demo/travel4.jpg">
+<!-- 
+Journey Template 
+http://www.templatemo.com/tm-511-journey
+-->
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">  <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">                <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
+    <link rel="stylesheet" type="text/css" href="css/datepicker.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="css/templatemo-style.css">                                   <!-- Templatemo style -->
+<link rel="stylesheet" href="layout/styles/layout.css"> 
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+            <!--[if lt IE 9]>
+              <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+              <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+          <![endif]-->
+    <style>
+    
+        .header{
+            width:100%;
+            background-color: rgba(0,0,0,0.2);
+        }
+    
+    </style>  
+    </head>
+
+      <body>
+         <div class="tm-main-content" id="top">
+             
+            
+                <div class="wrapper row1">
+    <header id="header" class="hoc clear"> 
+      <!-- ################################################################################################ -->
+      <div id="logo" class="fl_left">
+        <h1><a href="index.html">TRAVEL GO</a></h1>
+      </div>
+      <nav id="mainav" class="fl_right">
+        <ul class="clear">
+          <li ><a href="index.html">Home</a></li>
+          <li><a href="pages/gallery.html">Gallery</a>
+              
+            
+          </li>
+         <li class="active"><a  href="index1.html"  >Book Tickets</a>
+            
+          <li><a href="index2.html">SignUp</a></li>
+            <li><a href="#contactus">Contact Us</a></li>
+          <li ><a href="pages/sidebar-left.html">Any Comments</a></li>
+        </ul>
+      </nav>
+      <!-- ################################################################################################ -->
+    </header>
+  </div> <!-- container -->
+        </div> <!-- .tm-top-bar -->
+
+        <div class="tm-page-wrap mx-auto">
+            <section class="tm-banner">
+                <div class="tm-container-outer tm-banner-bg">
+                    <div class="container">
+
+                        <div class="row tm-banner-row tm-banner-row-header">
+                            <div class="col-xs-12">
+                                <div class="tm-banner-header">
+                                    <h1 class="text-uppercase tm-banner-title">Let's begin</h1>
+                                    <img src="img/dots-3.png" alt="Dots">
+                                    <p class="tm-banner-subtitle">We assist you to choose the best.</p>
+                                    <a href="javascript:void(0)" class="tm-down-arrow-link"><i class="fa fa-2x fa-angle-down tm-down-arrow"></i></a>       
+                                </div>    
+                            </div>  <!-- col-xs-12 -->                      
+                        </div> <!-- row -->
+                        <div class="row tm-banner-row" id="tm-section-search">
+
+                            <form action="index.html" method="get" class="tm-search-form tm-section-pad-2">
+                                <div class="form-row tm-search-form-row">                                
+                                    <div class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
+                                        <label for="inputCity">Choose Your Destination</label>
+                                        <input name="destination" type="text" class="form-control" id="inputCity" placeholder="Type your destination...">
+                                    </div>
+                                    <div class="form-group tm-form-group tm-form-group-1">                                    
+                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-2">
+                                            <label for="inputRoom">How many rooms?</label>
+                                            <select name="room" class="form-control tm-select" id="inputRoom">
+                                                <option value="1" selected>1 Room</option>
+                                                <option value="2">2 Rooms</option>
+                                                <option value="3">3 Rooms</option>
+                                                <option value="4">4 Rooms</option>
+                                                <option value="5">5 Rooms</option>
+                                                <option value="6">6 Rooms</option>
+                                                <option value="7">7 Rooms</option>
+                                                <option value="8">8 Rooms</option>
+                                                <option value="9">9 Rooms</option>
+                                                <option value="10">10 Rooms</option>
+                                            </select>                                        
+                                        </div>
+                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">                                       
+                                            <label for="inputAdult">Adult</label>     
+                                            <select name="adult" class="form-control tm-select" id="inputAdult">
+                                                <option value="1" selected>1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                            </select>                                        
+                                        </div>
+                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
+
+                                            <label for="inputChildren">Children</label>                                            
+                                            <select name="children" class="form-control tm-select" id="inputChildren">
+                                            	<option value="0" selected>0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                            </select>                                        
+                                        </div>
+                                    </div>
+                                </div> <!-- form-row -->
+                                <div class="form-row tm-search-form-row">
+
+                                    <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
+                                        <label for="inputCheckIn">Check In Date</label>
+                                        <input name="check-in" type="text" class="form-control" id="inputCheckIn" placeholder="Check In">
+                                    </div>
+                                    <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
+                                        <label for="inputCheckOut">Check Out Date</label>
+                                        <input name="check-out" type="text" class="form-control" id="inputCheckOut" placeholder="Check Out">
+                                    </div>
+                                    <div class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
+                                        <label for="btnSubmit">&nbsp;</label>
+                                        <button type="submit" class="btn btn-primary tm-btn tm-btn-search text-uppercase" id="btnSubmit">Check Availability</button>
+                                    </div>
+                                </div>                              
+                            </form>                             
+
+                        </div> <!-- row -->
+                        <div class="tm-banner-overlay"></div>
+                    </div>  <!-- .container -->                   
+                </div>     <!-- .tm-container-outer -->                 
+            </section>
+
+            <section class="p-5 tm-container-outer tm-bg-gray">            
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 mx-auto tm-about-text-wrap text-center">                        
+                            <h2 class="text-uppercase mb-4">Your <strong>Journey</strong> is our priority</h2>
+                            <p class="mb-4"></p>
+                            <a href="#" class="text-uppercase btn-primary tm-btn">Continue explore</a>                              
+                        </div>
+                    </div>
+                </div>            
+            </section>
+            
+            <div class="tm-container-outer" id="tm-section-2">
+                <section class="tm-slideshow-section">
+                    <div class="tm-slideshow">
+                        <img src="img/tm-img-01.jpg" alt="Image">
+                        <img src="img/tm-img-02.jpg" alt="Image">
+                        <img src="img/tm-img-03.jpg" alt="Image">    
+                    </div>
+                    <div class="tm-slideshow-description tm-bg-primary">
+                        <h2 class="">Europe's most visited places</h2>
+                        <p>Castles, palaces, churches and other buildings constructed in different periods of history stand still and attract millions of visitors annually. Among the most visited are the Stonehenge, the Roman Baths and Georgian City of Bath, Canterbury Cathedral, the Cotswolds, Warwick Castle and the Stirling Castle.37.7 million travelers entered the country in 2017, 1.9 million more than the previous year.  The number of tourists is in particular high during bank holidays and the summer months.</p>
+                        <a href="#" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary">Continue Reading</a>
+                    </div>
+                </section>
+                <section class="clearfix tm-slideshow-section tm-slideshow-section-reverse">
+
+                    <div class="tm-right tm-slideshow tm-slideshow-highlight">
+                        <img src="img/tm-img-02.jpg" alt="Image">
+                        <img src="img/tm-img-03.jpg" alt="Image">
+                        <img src="img/tm-img-01.jpg" alt="Image">
+                    </div> 
+
+                    <div class="tm-slideshow-description tm-slideshow-description-left tm-bg-highlight">
+                        <h2 class="">Asia's most popular places</h2>
+                        <p>(Tajmahal)In 1632 an Emperor started with the construction of a mosque to commemorate his favorite wife. It was finished in 1648 and it is the jewel of the muslim community in India. It has beautiful gardens, symbolizing paradise, or a heaven on earth.If you have not yet seen this beautiful white marble mosque, be sure to visit it when you can!...</p>
+                        <a href="#" class="text-uppercase tm-btn tm-btn-white tm-btn-white-highlight">Continue Reading</a>
+                    </div>                        
+
+                </section>
+                <section class="tm-slideshow-section">
+                    <div class="tm-slideshow">
+                        <img src="img/tm-img-03.jpg" alt="Image">
+                        <img src="img/tm-img-02.jpg" alt="Image">
+                        <img src="img/tm-img-01.jpg" alt="Image">
+                    </div>
+                    <div class="tm-slideshow-description tm-bg-primary">
+                        <h2 class="">America's most famous places</h2>
+                        <p>The United States is a vast land and, as a result, most people plan their trips within a given region, be it the East Coast, the Southwest, the beaches of Florida or California, or outlying regions like Hawaii and Alaska. There are plenty of options for travelers with incredible sights sprinkled across the country. The USA is home to some of the most spectacular scenery in the world and some of the most recognizable icons on the globe. For anyone in the enviable position of having unlimited time and resources, these are the top attractions to include on your itinerary.</p>
+                        <a href="#" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary">Continue Reading</a>
+                    </div>
+                </section>
+            </div>        
+            <div class="tm-container-outer" id="tm-section-3">
+                <ul class="nav nav-pills tm-tabs-links">
+                    <li class="tm-tab-link-li">
+                        <a href="#1a" data-toggle="tab" class="tm-tab-link">
+                            <img src="img/north-america.png" alt="Image" class="img-fluid">
+                            North America
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#2a" data-toggle="tab" class="tm-tab-link">
+                            <img src="img/south-america.png" alt="Image" class="img-fluid">
+                            South America
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#3a" data-toggle="tab" class="tm-tab-link">
+                            <img src="img/europe.png" alt="Image" class="img-fluid">
+                            Europe
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#4a" data-toggle="tab" class="tm-tab-link active"><!-- Current Active Tab -->
+                            <img src="img/asia.png" alt="Image" class="img-fluid">
+                            Asia
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#5a" data-toggle="tab" class="tm-tab-link">
+                            <img src="img/africa.png" alt="Image" class="img-fluid">
+                            Africa
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#6a" data-toggle="tab" class="tm-tab-link">
+                            <img src="img/australia.png" alt="Image" class="img-fluid">
+                            Australia
+                        </a>
+                    </li>
+                    
+                </ul>
+                <div class="tab-content clearfix">
+                	
+                    <!-- Tab 1 -->
+                    <div class="tab-pane fade" id="1a">
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/tm-img-06.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Alaskan hotel &  Bar</h3>
+                                    <p class="tm-text-highlight">Alaska</p>
+                                    <p class="tm-text-gray">The Alaskan Hotel and Bar, also known as the Northlander Hotel and The Alaskan, is a historic establishment and the oldest operating hotel in Juneau, Alaska. It was opened in 1913. The owners, three miners who struck it rich in the nearby Coast Range, tied the hotel's keys to a helium balloon and released it...</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">₹27000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>                        
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/tm-img-07.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Thomas Jefferson Hotel</h3>
+                                    <p class="tm-text-highlight">Alabama</p>
+                                    <p class="tm-text-gray">Thomas Jefferson Tower, originally the Thomas Jefferson Hotel and then the Cabana Hotel, is a 19-story building on the western side of downtown Birmingham, Alabama. It was completed in 1929 as the 350-room Thomas Jefferson Hotel and is at 1623 2nd Avenue North.[1] It has a tower in its roof intended to be a zeppelin mooring mast...</p>   
+                                </div>
+                                <div id="preload-hover-img"></div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">₹20000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/tm-img-05.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Russsel Erskin Hotel</h3>
+                                    <p class="tm-text-highlight">Alabama</p>
+                                    <p class="tm-text-gray">The Russel Erskine Hotel is an apartment building and former hotel in Huntsville, Alabama. It was named after Albert Russel Erskine. It was added to the National Register of Historic Places in 1980. The building currently houses apartments....</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">₹25000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/tm-img-04.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Mobile Marriott</h3>
+                                    <p class="tm-text-highlight">Alabama</p>
+                                    <p class="tm-text-gray">The Mobile Marriott is a high-rise hotel in the U.S. city of Mobile, Alabama. Completed in 1979, the building rises 325 feet (99 m) and 20 stories. The Mobile Marriott is tied with the Mobile Government Plaza as the 4th-tallest building in Mobile and the 10th-tallest in Alabama....</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">₹13000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>    
+                        </div>                        
+
+                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a>
+                    </div> <!-- tab-pane -->
+                    
+                    <!-- Tab 2 -->
+                    <div class="tab-pane fade" id="2a">
+
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/tm-img-05.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Casino Central</h3>
+                                    <p class="tm-text-highlight">Argentina</p>
+                                    <p class="tm-text-gray">The Central Casino is one of a pair of twin buildings designed by architect Alejandro Bustillo. Inspired by seafront Hôtel du Palais in Biarritz, France, the casino and neighboring Grand Provincial Hotel (inaugurated in 1950) remain architectural landmarks of the city of Mar del Plata as well as of Argentina. Its decoration was designed by famed French designer...</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">₹27000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>                        
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/tm-img-04.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Eden Hotel</h3>
+                                    <p class="tm-text-highlight">Argentina</p>
+                                    <p class="tm-text-gray">The hotel was built 1897 by German army officer Roberto Bahlcke. Its main shareholders were Ernesto Tornquist, Juan Kurth, Roberto Bahlcke and Maria Herbert de Kraeutner....</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">₹15000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/tm-img-07.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Hotel Nutibara</h3>
+                                    <p class="tm-text-highlight">Medellin</p>
+                                    <p class="tm-text-gray"> Hotel Nutibara, is a hotel located in the city of Medellín, in the city center, next to the Parque Berrío station of the Medellín Metro and tourist sites such as the Museo de Antioquia, the Palace of Culture, the Berrío parks and Bolívar, the metropolitan cathedral and the Candelaria basilica....</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">₹10000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/tm-img-06.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Belmond Hotel Rio Sagrado</h3>
+                                    <p class="tm-text-highlight">South Fourth</p>
+                                    <p class="tm-text-gray">Belmond Hotel Rio Sagrado is a hotel in the Sacred Valley of the Incas, 46 kilometres from Cusco, Peru.[1] It is built on the banks of the Urubamba River by Urubamba, near the town of Ollantaytambo, which is known for its Inca archaeological site and as a starting point for one of the longer treks to Machu Picchu. The hotels features 11 suites, 10 rooms, and 2 villas. It hotel has extensive gardens constructed with streams reminiscent of Inca water channels....</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">₹5000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>    
+                        </div>                        
+
+                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a>
+                    </div> <!-- tab-pane -->          
+                    
+                    <!-- Tab 3 -->     
+                    <div class="tab-pane fade" id="3a">
+
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/tm-img-04.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Europe Hotel</h3>
+                                    <p class="tm-text-highlight">Venecia, Italy</p>
+                                    <p class="tm-text-gray">Puglia. With its crystalline seas, white-sand beaches and hidden rocky coves, Puglia is many Italians' favourite place to soak up the sun in the summer months. Its interior is just as beautiful, with wooded hills, wildlife-rich lakes, and endless olive groves: the region produces around 40 percent of Italy's olive oil...</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">₹25000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>                        
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/tm-img-05.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Paris Hotel</h3>
+                                    <p class="tm-text-highlight">Paris, France</p>
+                                    <p class="tm-text-gray">Everyone knows Paris as the place that inspired Hemingway and Balzac, impressionist paintings and love songs. But when you finally visit Paris for yourself, and see the cobblestoned streets of Saint-Germain and backlit silhouette of Notre-Dame, its charm transcends cliche. With gilded history reflected across so many arrondissements in Paris, here are 25 of the most beautiful places in the city....</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">₹1500</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/tm-img-06.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Barcelona Hotel</h3>
+                                    <p class="tm-text-highlight">Barcelona, Spain</p>
+                                    <p class="tm-text-gray">.With its sunny climate and thousands of years of history and colorful culture, Spain is a dream travel destination for many. Although with vast landscapes, world-famous coastline and wide stretches of mountain ranges it’s hard to know where to start. Here are 20 of the most beautiful places to visit in Spain chosen by published travel writer and author of the Frommer’s guide to Seville, Granada and the Best of Andalusia, Jeremy Head..</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">₹17000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/tm-img-07.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Grand Resort Pasha</h3>
+                                    <p class="tm-text-highlight">Istanbul, Turkey</p>
+                                    <p class="tm-text-gray">Istanbul is an utterly bewitching city – a mesmerzing, schizoid medley of sumptuous palaces, domes and minaretes, cobble-stoned streets, decrepit old wooden houses, squalid concrete tower blocks, graceful art-nouveau apartments, international fashion shops, bazaars and beggars, street vendors and stray dogs and...</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">₹17000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>    
+                        </div>                        
+
+                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a>
+                    </div> <!-- tab-pane -->
+                    
+                    <!-- Tab 4 -->
+                    <div class="tab-pane fade show active" id="4a">
+                    <!-- Current Active Tab WITH "show active" classes in DIV tag -->
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/tm-img-06.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Marina Bay Sands Singapore</h3>
+                                    <p class="tm-text-highlight">Singapore</p>
+                                    <p class="tm-text-gray">It is a big island full of man-made activities geared for tourists and also houses three of the best beaches in Singapore - Tanjong Beach, Siloso Beach, and Palawan Beach. For centuries, the island was known as Pulau Blakang Mati, meaning 'death from behind'...</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">₹27000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>                        
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/tm-img-07.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Novotel Yangon Max</h3>
+                                    <p class="tm-text-highlight">Yangon, Myanmar</p>
+                                    <p class="tm-text-gray">In addition to beautiful landscapes, Myanmar is radiant with a crown of shimmering gold. This deeply devout Buddhist country houses thousands of stunning stupas and pagodas, coated in layer upon layer of gold leaf...</p>   
+                                </div>
+                                <div id="preload-hover-img"></div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">₹5000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/tm-img-05.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Amara Bangkok</h3>
+                                    <p class="tm-text-highlight">Bangkok, Thailand</p>
+                                    <p class="tm-text-gray">As one of the world's most popular tourist destinations, it's no secret Thailand is home to some truly spectacular places. White sand beaches and palm trees are the first images that come to mind for many, but Thailand also encompasses tropical forests, mist-covered mountains and compelling ancient monuments....</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">₹4095</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/tm-img-04.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Vietnam Backpacker Hotels - Hoi An</h3>
+                                    <p class="tm-text-highlight">Vientiane, Laos</p>
+                                    <p class="tm-text-gray">Although the low-slung harbour town doesn’t have all that much – except location – to recommend it, the rest of the island is rocky and wild and begging to be explored. Half of Cat Ba is verdant national park and it’s a paradise for travellers who come here to hike, climb and kayak (the waters and coral reefs are protected too). For jaw-dropping views across Ha Long Bay, head up to Cannon Fort....</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">₹340</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>    
+                        </div>                        
+
+                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a>
+                    </div> <!-- tab-pane -->
+                    
+                    <!-- Tab 5 -->
+                    <div class="tab-pane fade" id="5a">
+
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/tm-img-05.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Africa Resort Hotel</h3>
+                                    <p class="tm-text-highlight">Capetown</p>
+                                    <p class="tm-text-gray">South Africa has become one of the most popular travel destinations in the world. And it's no wonder, given its abundance of wildlife, diversity of cultures, and natural beauty (plus Cape Town, obviously). You can pretty much see it all in just one country, from epic coastlines and colorful architecture to penguin-filled beaches and vibrant coral reefs. The entire country deserves to be explored, but here are our picks for the 20 most beautiful places in South Africa....</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">₹3400</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>                        
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/tm-img-04.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Le Quartier Français</h3>
+                                    <p class="tm-text-highlight">Cape Peninsula</p>
+                                    <p class="tm-text-gray">Le Quartier Français is a restaurant and hotel in Franschhoek, South Africa near Stellenbosch. The property has thirteen rooms, eight suites and a cottage that overlook a landscaped garden with a natural pool.The restaurant ranked 36th best restaurant in the world in Restaurant magazine's Top 50 in 2011.[1] The chef is Margot Janse. It is regarded as the best restaurant in Africa and the Middle East...</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">₹5000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/tm-img-07.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">The Royal Hotel </h3>
+                                    <p class="tm-text-highlight">Western Cape</p>
+                                    <p class="tm-text-gray">The Royal Hotel in Riebeek Kasteel is the oldest licensed hotel of the Western Cape and was built in 1862. This now fully restored heritage building is one of the few hotels left of that particular colonial era of South Africa. Famous visitors in history were Jan Smuts and Daniel Malan, both from the Riebeek Valley and both prime ministers of South Africa during troubled times. In 2006 southafrica.org placed The Royal as only hotel on the list of "the 50 most fabulous places to visit in SA.According to them it has the longest stoep (veranda) south of the Limpopo....</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">₹6000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/tm-img-06.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">The Michelangelo Towers</h3>
+                                    <p class="tm-text-highlight">Sandton</p>
+                                    <p class="tm-text-gray">The Michelangelo Towers is a hotel building in Sandton, South Africa. It is a prominent structure in the Sandton skyline and is one of South Africa's elite hotels, having accommodated guests such as former United States President Barack Obama, Oprah Winfrey, Angelina Jolie, Mariah Carey, Paris Hilton, Kanye West, Lady Gaga and Justin Bieber...</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">₹12000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>    
+                        </div>                        
+
+                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a>
+                    </div> <!-- tab-pane -->   
+                    
+                    <!-- Tab 6 -->            
+                    <div class="tab-pane fade" id="6a">
+
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/tm-img-04.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Hotel Australia</h3>
+                                    <p class="tm-text-highlight">Sydney</p>
+                                    <p class="tm-text-gray">The hotel was located on Castlereagh Street, Sydney until its closure on 30 June 1971. It was the premier hotel in Sydney, describing itself as "The Hotel of the Commonwealth". Its foundation stone was laid by Sir Henry Parkes in 1889. The hotel had a large entrance onto the street in polished granite, the stairs grey, the doric columns red. In 1968 the Hotel Australia was purchased by the huge MLC Insurance and Finance group ..</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">₹15000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>                        
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/tm-img-05.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Exchange Hotel</h3>
+                                    <p class="tm-text-highlight">Sydney</p>
+                                    <p class="tm-text-gray">The Exchange Hotel was the last pub to be built during the local boom of the 1880s. It was also the largest in the Balmain and Rozelle area. The original building consisted of 40 rooms connected with 2.1-metre-wide (7 ft) corridors. The pub became a major meeting point for the local community and in the early years as the centre for union members, including those of the Balmain Labourers Union which later went on to become the Painters and Dockers Union...</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">₹14000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/tm-img-06.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Grace Hotel</h3>
+                                    <p class="tm-text-highlight">Sydney</p>
+                                    <p class="tm-text-gray">The building was designed by Morrow & Gordon and built by Kell & Rigby during the late 1920s and opened in 1930 by Grace Brothers, the Australian department store magnates, as their headquarters. It was inspired by the neo-Gothic Tribune Tower in Chicago but the building was of the Art Deco architectural style and had state-of-the-art innovations and facilities for the time. The Grace Building was listed on the Register of the National Estate in 1980 and placed on the NSW State Heritage Register in 1999. ...</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">₹20000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/tm-img-07.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Regatta Hotel</h3>
+                                    <p class="tm-text-highlight">Brisbane</p>
+                                    <p class="tm-text-gray">The historic hotel located on the corner of Coronation Drive and Sylvan Road in the Brisbane suburb of Toowong and faces the Brisbane River. The first hotel was established on the site in 1874, as a single-storey wooden building. The Regatta Hotel is classified by the National Trust of Queensland and was entered in the Queensland Heritage Register in 1992....</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">₹7000</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>    
+                        </div>                        
+
+                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a>
+                    </div> <!-- tab-pane -->
+                    
+                    <!-- Tab 7 -->
+                    <div class="tab-pane fade" id="7a">
+
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/tm-img-04.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Antartica Resort</h3>
+                                    <p class="tm-text-highlight">Ant City One</p>
+                                    <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">₹340</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>                        
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/tm-img-05.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Pulvinar Semper</h3>
+                                    <p class="tm-text-highlight">Ant City Two</p>
+                                    <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">₹340</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/tm-img-06.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Cras vel sapien</h3>
+                                    <p class="tm-text-highlight">Ant City Three</p>
+                                    <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">₹340</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/tm-img-07.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Nullam eget est</h3>
+                                    <p class="tm-text-highlight">Ant City Four</p>
+                                    <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">₹340</p>
+                                    <p class="tm-recommended-price-link">Continue Reading</p>
+                                </a>
+                            </div>    
+                        </div>                        
+
+                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a>
+                    </div> <!-- tab-pane -->
+                </div>
+            </div>
+
+            
+               <div class="wrapper row4"style="width: 100%" id="contactus">
+  <footer id="footer" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div class="one_third first" >
+      <h6 class="heading">For Any Query</h6>
+      <p class="nospace btmspace-30">Give your Name and Email id,Our representative will call you.</p>
+      <form method="post" action="#">
+        <fieldset>
+          <legend>Newsletter:</legend>
+          <input class="btmspace-15" type="text" value="" placeholder="Name">
+          <input class="btmspace-15" type="text" value="" placeholder="Email">
+          <button type="submit" value="submit">Submit</button>
+        </fieldset>
+      </form>
+    </div>
+    <div class="one_third">
+              <h6 class="heading">Our Office</h6>
+      <ul class="nospace btmspace-30 linklist contact">
+        <li><i class="fa fa-map-marker"></i>
+          <address>
+          Street Name &amp; Number, Town, Postcode/Zip
+          </address>
+        </li>
+        <li><i class="fa fa-phone"></i> +00 (123) 456 7890</li>
+        <li><i class="fa fa-envelope-o"></i> info@domain.com</li>
+      </ul>
+      <ul class="faico clear">
+        <li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a class="faicon-dribble" href="#"><i class="fa fa-dribbble"></i></a></li>
+        <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+        <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+        <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
+      </ul>
+    
+    </div>
+    <div class="one_third">
+    <h2 class="heading">Find us on Map</h2>
+<div id="map" style="width:400px;height:350px"></div>
+<script>
+function myMap()
+{
+var mapOptions = {
+center:new google.maps.LatLng(30.741482,76.768066),
+zoom:10,
+mapTypeId : google.maps.MapTypeId.HYBRID
+}        
+var map =new google.maps.Map(document.getElementById('map'),mapOptions)       
+}
+</script>   
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQrbxR_h_ffRjbtJY5PAzTGo1TzFH5GJY&callback=myMap">
+    
+</script>
+    <br>
+    </div>
+    <!-- ################################################################################################ -->
+  </footer>
+</div><!-- .tm-container-outer -->
+
+            <footer class="tm-container-outer">
+               
+            </footer>
+        </div>
+    </div> <!-- .main-content -->
+
+    <!-- load JS files -->
+    <script src="js/jquery-1.11.3.min.js"></script>             <!-- jQuery (https://jquery.com/download/) -->
+    <script src="js/popper.min.js"></script>                    <!-- https://popper.js.org/ -->       
+    <script src="js/bootstrap.min.js"></script>                 <!-- https://getbootstrap.com/ -->
+    <script src="js/datepicker.min.js"></script>                <!-- https://github.com/qodesmith/datepicker -->
+    <script src="js/jquery.singlePageNav.min.js"></script>      <!-- Single Page Nav (https://github.com/ChrisWojcik/single-page-nav) -->
+    <script src="slick/slick.min.js"></script>                  <!-- http://kenwheeler.github.io/slick/ -->
+    <script src="js/jquery.scrollTo.min.js"></script>           <!-- https://github.com/flesler/jquery.scrollTo -->
+    <script> 
+        /* Google Maps
+        ------------------------------------------------*/
+        var map = '';
+        var center;
+
+        function initialize() {
+            var mapOptions = {
+                zoom: 16,
+                center: new google.maps.LatLng(37.769725, -122.462154),
+                scrollwheel: false
+            };
+
+            map = new google.maps.Map(document.getElementById('google-map'),  mapOptions);
+
+            google.maps.event.addDomListener(map, 'idle', function() {
+              calculateCenter();
+          });
+
+            google.maps.event.addDomListener(window, 'resize', function() {
+              map.setCenter(center);
+          });
+        }
+
+        function calculateCenter() {
+            center = map.getCenter();
+        }
+
+        function loadGoogleMap(){
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDVWt4rJfibfsEDvcuaChUaZRS5NXey1Cs&v=3.exp&sensor=false&' + 'callback=initialize';
+            document.body.appendChild(script);
+        } 
+
+        /* DOM is ready
+        ------------------------------------------------*/
+        $(function(){
+
+            // Change top navbar on scroll
+            $(window).on("scroll", function() {
+                if($(window).scrollTop() > 100) {
+                    $(".tm-top-bar").addClass("active");
+                } else {                    
+                 $(".tm-top-bar").removeClass("active");
+                }
+            });
+
+            // Smooth scroll to search form
+            $('.tm-down-arrow-link').click(function(){
+                $.scrollTo('#tm-section-search', 300, {easing:'linear'});
+            });
+
+            // Date Picker in Search form
+            var pickerCheckIn = datepicker('#inputCheckIn');
+            var pickerCheckOut = datepicker('#inputCheckOut');
+
+            // Update nav links on scroll
+            $('#tm-top-bar').singlePageNav({
+                currentClass:'active',
+                offset: 60
+            });
+
+            // Close navbar after clicked
+            $('.nav-link').click(function(){
+                $('#mainNav').removeClass('show');
+            });
+
+            // Slick Carousel
+            $('.tm-slideshow').slick({
+                infinite: true,
+                arrows: true,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            });
+
+            loadGoogleMap();                                       // Google Map                
+            $('.tm-current-year').text(new Date().getFullYear());  // Update year in copyright           
+        });
+
+    </script>             
+
+</body>
+</html>
